@@ -1,0 +1,130 @@
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 9999;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 24px;
+    min-width: 400px;
+    max-width: 450px;
+    min-height: 100px;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast--success {
+    background-color: #F6FFF9;
+    border-color: #48C1B5;
+}
+
+.toast--error {
+    background-color: #FFF5F3;
+    border-color: #F4B0A1;
+}
+
+.toast--success .toast__icon {
+    background-image: linear-gradient(to bottom, #48CA93, #48BACA);
+}
+
+.toast--error .toast__icon {
+    background-image: linear-gradient(to bottom, #E88B76, #CA5048);
+}
+
+.toast__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--while-color);
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0 18px 18px 0;
+}
+
+.toast__body {
+    flex-grow: 1;
+    color: var(--while-color);
+}
+
+.toast__title {
+    font-size: 18px;
+    color: #27303A;
+    margin-bottom: 2px;
+}
+
+.toast__message {
+    font-size: 16px;
+    color: #2F3F53;
+}
+
+.toast__message.toast--success {
+    color: #48C1B5;
+
+}
+
+.toast__close {
+    font-size: 28px;
+    transition: all ease 0.3s;
+    color: #979FA9;
+    margin: 0 0 22px 18px;
+}
+
+.toast__close:hover {
+    color: #27303A;
+}
+
+/* toast dark mode */
+.app.dark-mode .toast__icon {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: none;
+}
+
+.app.dark-mode .toast--success {
+    background-color: transparent;
+    border-color: #43D590;
+    background-image: linear-gradient(to right, #32BB71, #2A9D8F);
+}
+
+.app.dark-mode .toast--error {
+    background-color: transparent;
+    border-color: #F0863A;
+    background-image: linear-gradient(to right, #F6743E, #D42525);
+}
+
+.app.dark-mode .toast__title,
+.app.dark-mode .toast__message {
+    color: var(--while-color)
+}
+
+.app.dark-mode .toast__close {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.app.dark-mode .toast__close:hover {
+    color: var(--while-color);
+}
+

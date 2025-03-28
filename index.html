@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tuandung2109</title>
+    <link rel="icon" href="assets/img/logo-2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/toast__message.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome.com/releases/v6.4.2/css/all.css" />
+</head>
+
+<body>
+    <div id="app" class="app">
+        <div class="player item active">
+            <div class="dashboard" >
+                <header>
+                    <h4>Now playing:</h4>
+                    <div class="switch-container">
+                        <input type="checkbox" class="switch">
+                        <label for="" class="light">
+                            <i class="fa-solid fa-sun"></i>
+                            <!-- <i class="fa-solid fa-sun-bright"></i> -->
+                        </label>
+                        <label for="" class="dark">
+                            <i class="fa-duotone fa-moon"></i>
+                        </label>
+                    </div>
+                </header>
+    
+                <div class="cd">
+                    <div class="cd-thumb"></div>
+                </div>
+    
+                <div class="info">
+                    <h2 class="name-song"></h2>
+                    <h3 class="name-singer"></h3>
+                </div>
+    
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100" />
+                <div class="times">
+                    <div class="time-left">00:00</div>
+                    <div class="time-right"></div>
+                </div>
+    
+                <div class="optional-controls">
+                    <div class="btn btn-repeat">
+                        <i class="fa-light fa-rotate-right"></i>
+                        <span class="note">Phát lại bài hát</span>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fa-light fa-backward-step"></i>
+                        <span class="note">Lùi lại</span>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                        <i class="fa-solid fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fa-light fa-forward-step"></i>
+                        <span class="note">Tiếp theo</span>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa-light fa-shuffle"></i>
+                        <span class="note">Phát ngẫu nhiên</span>
+                    </div>
+                </div>
+    
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="playlist">
+            </div>
+        </div>
+
+        <div class="user item">
+            <div class="background">
+                <figure>
+                    <img src="assets/img/Anh2.jpg" alt="" class="avatar">
+                </figure>
+            </div>
+            <div class="content">
+                <p class="content__title">Hello , I'm</p>
+                <h2 class="content__name">DINH TUAN DUNG</h2>
+                <p class="content__sub-title">
+                    I'm a 
+                    <span>
+                    </span>
+                </p>
+                <p class="content__des">I wrote the code for this music listening website using Html, Css and Javascript. I learned from Mr. Dang Ngoc Son of F8. And I also referred to other friends' articles to complete the first project. </p>
+                <span class="text-contact">Contact me:</span>
+
+                <div class="socicals">
+                    <div class="socical">
+                        <a target="_blank" href="https://www.facebook.com/inhtuandung.617738/" class="btn">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/inhtuandung.617738/" class="profile facebook">
+                            <figure>
+                                <img src="assets/img/Anh2.jpg" alt="" class="profile__img">
+                            </figure>
+                            <p class="profile__content">
+                                <span class="profile__title">Facebook</span>
+                                <span class="profile__name">Name: Tuấn Dũng</span>
+                                <span class="profile__id">ID: TUANDUNG.2004</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="socical">
+                        <a target="_blank" href="https://www.instagram.com/tuandung2109/profilecard/?igsh=Y2Zycmhxang1OGI5" class="btn">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/tuandung2109/profilecard/?igsh=Y2Zycmhxang1OGI5" class="profile instagram">
+                            <figure>
+                                <img src="assets/img/Anh1.jpg" alt="" class="profile__img">
+                            </figure>
+                            <p class="profile__content">
+                                <span class="profile__title">Instagram</span>
+                                <span class="profile__name">Name: TUẤN DŨNg</span>
+                                <span class="profile__id">ID: TUANDUNG.04</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="socical">
+                        <a target="_blank" href="https://www.tiktok.com/@dinhtuandung2109" class="btn">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a target="_blank" href="https://www.tiktok.com/@dinhtuandung2109" class="profile tiktok">
+                            <figure>
+                                <img src="assets/img/Anh3.jpg" alt="" class="profile__img">
+                            </figure>
+                            <p class="profile__content">
+                                <span class="profile__title">Tiktok</span>
+                                <span class="profile__name">Name: TUẤN DŨNG</span>
+                                <span class="profile__id">ID: TUANDUNG.04</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="socical">
+                        <a target="_blank" href="https://github.com/tuandung2109" class="btn">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/tuandung2109" class="profile github">
+                            <figure>
+                                <img src="assets/img/Anh4.jpg" alt="" class="profile__img">
+                            </figure>
+                            <p class="profile__content">
+                                <span class="profile__title">Github</span>
+                                <span class="profile__name">Name: Đinh Tuấn Dũng</span>
+                                <span class="profile__id">ID: tuandung2109</span>
+                            </p>
+                        </a>
+                    </div>
+                    <a target="_blank" href="#" class="btn">
+                        <i class="fa-light fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="nav-bottom__btn active">
+                <i class="fa-light fa-house"></i>
+            </div>
+            <div class="nav-bottom__btn">
+                <i class="fa-light fa-user"></i>
+            </div>
+        </div>
+
+        <div id="toast"></div>
+    </div>
+    
+    <script src="user.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
