@@ -39,7 +39,7 @@ const app = {
             name: "Nha ",
             singer: "ft.Innie",
             path: "assets/music/Song1-Nha.mp3",
-            image: "assets/img/Song1-NhaBumBum.jpg",
+            image: "assets/img/Song11-Nha.jpg",
         },
         {
             name: "Nắng có mang em về",
